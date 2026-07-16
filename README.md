@@ -2,6 +2,9 @@
 
 A reusable facilitation framework for designing and running workshops using AI assistance.
 
+![](./assets/coaching-workshop-facilitator.png)
+
+
 This repository contains:
 
 - A Workshop Planning Framework (6+2P Canvas)
