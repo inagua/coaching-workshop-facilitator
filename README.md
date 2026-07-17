@@ -4,6 +4,21 @@ A reusable facilitation framework for designing and running workshops using AI a
 
 ![](./assets/coaching-workshop-facilitator.png)
 
+## Table of Contents
+
+- [Core Framework](#core-framework)
+- [Typical Workflow](#typical-workflow)
+  - [Step 1 - Create a workshop folder](#step-1---create-a-workshop-folder)
+  - [Step 2 - Gather source material](#step-2---gather-source-material)
+  - [Step 3 - Ask Claude to complete the canvas](#step-3---ask-claude-to-complete-the-canvas)
+  - [Step 4 - Generate the workshop agenda](#step-4---generate-the-workshop-agenda)
+  - [Step 5 - Generate the invitation](#step-5---generate-the-invitation)
+  - [Step 6 - Generate workshop deliverables](#step-6---generate-workshop-deliverables)
+- [Workshop Types](#workshop-types)
+- [Facilitation Principles](#facilitation-principles)
+- [Example Prompt](#example-prompt)
+
+---
 
 This repository contains:
 
@@ -72,18 +87,14 @@ Add any material that provides context.
 Example prompt to run from `workshops/2026-07-example-workshop`:
 
 ```text
-Using CLAUDE.md and all files in /inputs:
-
-1. Identify the workshop type.
-2. Complete the 8P Workshop Canvas.
-3. Highlight missing information.
-4. Challenge assumptions.
+Using all files in 2026-07-example-workshop/inputs, 
+run the "8P Workshop Canvas".
 ```
 
 Expected output:
 
 ```text
-canvas.md
+outputs/8p-canvas.md
 ```
 
 ---
@@ -108,7 +119,7 @@ For each activity provide:
 Expected output:
 
 ```text
-agenda.md
+outputs/agenda.md
 ```
 
 ---
@@ -133,7 +144,7 @@ Include:
 Expected output:
 
 ```text
-invitation.md
+outputs/invitation.md
 ```
 
 ---
@@ -153,7 +164,7 @@ Create a draft incident documentation.
 Expected output:
 
 ```text
-incident-document.md
+outputs/incident-document.md
 ```
 
 Sections:
@@ -179,7 +190,7 @@ Generate a working agreement draft.
 Expected output:
 
 ```text
-working-agreement.md
+outputs/working-agreement.md
 ```
 
 ---
